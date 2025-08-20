@@ -5,7 +5,7 @@ export default async function handler(request, response) {
   // Ambil kunci API & ID Sheet dari Environment Variables di Vercel (lebih aman)
   const SHEET_ID = process.env.SHEET_ID;
   const API_KEY = process.env.API_KEY;
-  const RANGE = 'Sheet1!A:EZ'; // Sesuaikan jika perlu
+  const RANGE = 'Sheet1!A:O'; // Sesuaikan jika perlu
 
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${RANGE}?key=${API_KEY}`;
 
